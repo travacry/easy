@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tr1o
- * Date: 22.07.2018
- * Time: 23:18
- */
 
 namespace WebInvest;
 
@@ -14,7 +8,7 @@ class MySort {
 
     function __construct(array $arr)
     {
-        $arrLinks = $this->sortingByLenghtOfWords($arr);
+        $arrLinks = $this->bundingIndexesByLenghtOfWords($arr);
         $this->res = $this->sortingByIndexes($arrLinks);
     }
 
@@ -22,18 +16,29 @@ class MySort {
         return $this->res;
     }
 
-    private function sortingByLenghtOfWords(array &$array) : array {
+    /**
+     * Связывание массива ссылок с индекным массивом, по условию упорядочивания : длины слова и последним символом
+     * @param array $array
+     * @return array
+     */
+    private function bundingIndexesByLenghtOfWords(array &$array) : array {
 
         $arrayLinks = [];
         // вначале, банально по длине
         foreach ($array as &$val) {
             $key = mb_strlen($val, 'UTF-8');
             $indexLastChar = mb_substr($val, $key - 1, 1);
+            // создание индекса для группировки по первому условию + последний симовол
             $arrayLinks[$key * 1000000 + $this->mb_ord($indexLastChar)] = $val;
         }
         return $arrayLinks;
     }
 
+    /**
+     * Простая сортировка полученных индексов, без использования sort
+     * @param array $arrayLinks
+     * @return array
+     */
     private function sortingByIndexes(array &$arrayLinks) : array {
 
         $sortedIndexes = [];
@@ -61,6 +66,11 @@ class MySort {
         return $resultArray;
     }
 
+    /**
+     * Получение значения символа по таблице, т.к в 7.1 подджержки ord 2 байта, нет
+     * @param $string
+     * @return int
+     */
     private function mb_ord($string)
     {
         if (extension_loaded('mbstring') === true)

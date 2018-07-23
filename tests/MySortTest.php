@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tr1o
- * Date: 23.07.2018
- * Time: 15:08
- */
 
 use PHPUnit\Framework\TestCase;
 use WebInvest\MyClass;
