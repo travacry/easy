@@ -2,69 +2,71 @@
 
 namespace WebInvest;
 
+use function PHPSTORM_META\elementType;
+
 class MySort {
 
     private $res;
 
-    function __construct(array $arr)
+    /**
+     * MySort constructor.
+     * @param array $arr
+     * @param TypeSort $typeSort
+     */
+    function __construct(array $arr, TypeSort $typeSort)
     {
-        $arrLinks = $this->bundingIndexesByLenghtOfWords($arr);
-        $this->res = $this->sortingByIndexes($arrLinks);
+        $this->res = $this->sort($arr, $typeSort);
     }
 
-    function get() {
+    /**
+     * @return string
+     */
+//    function __toString() : string {
+//        if (!empty($res) && is_array($res)) return json_encode($res);
+//        else new \ErrorException(sprintf("Invalid value %s for %s", $res, get_class($this)));
+//    }
+
+
+    /**
+     * @return array
+     */
+    function get() : array {
         return $this->res;
     }
 
     /**
      * Связывание массива ссылок с индекным массивом, по условию упорядочивания : длины слова и последним символом
+     *
      * @param array $array
+     * @param TypeSort $typeSort
      * @return array
      */
-    private function bundingIndexesByLenghtOfWords(array &$array) : array {
+    private function sort(array $array, TypeSort $typeSort) : array {
 
-        $arrayLinks = [];
+        $arrayLinks = array();
+        $len = $this->mb_ord("ы") - $this->mb_ord("а");
+        $maxLen = ($typeSort == TypeSort::Desc) ? max(array_map('mb_strlen', $array)) : 0;
+
         // вначале, банально по длине
         foreach ($array as &$val) {
             $key = mb_strlen($val, 'UTF-8');
-            $indexLastChar = mb_substr($val, $key - 1, 1);
+            $index = 0;
+            for ($i = 1; $i <= mb_strlen($val); $i++) {
+                $curIndex = $key - $i; // $key - $i; $i - 1, т.к от 0;
+                $char = mb_substr($val, $curIndex, 1);
+                // сдвиг по символам
+                $index += (($typeSort == TypeSort::Desc) ?
+                        ($this->mb_ord("а") - $this->mb_ord($char) + $len)
+                        : ($this->mb_ord($char)) + $len) * ($curIndex + 1);
+            }
+            $index += (($typeSort == TypeSort::Desc) ? $maxLen - mb_strlen($val) : $key) * 1000000;
             // создание индекса для группировки по первому условию + последний симовол
-            $arrayLinks[$key * 1000000 + $this->mb_ord($indexLastChar)] = $val;
+            $arrayLinks[$index] = $val;
         }
+        ksort($arrayLinks);
         return $arrayLinks;
     }
 
-    /**
-     * Простая сортировка полученных индексов, без использования sort
-     * @param array $arrayLinks
-     * @return array
-     */
-    private function sortingByIndexes(array &$arrayLinks) : array {
-
-        $sortedIndexes = [];
-        // нужен нормальный массив для того чтобы задать смещение для сортировки
-        for ($index = 0; $index < count($arrayLinks); $index++) {
-            $sortedIndexes[$index] = key($arrayLinks);
-            next($arrayLinks);
-        }
-
-        for ($i = 0; $i < count($sortedIndexes) - 1; $i++) {
-            for ($c = $i + 1; $c < count($sortedIndexes); $c++) {
-                if ($sortedIndexes[$i] > $sortedIndexes[$c]) {
-                    $self = $sortedIndexes[$i];
-                    $sortedIndexes[$i] = $sortedIndexes[$c];
-                    $sortedIndexes[$c] = $self;
-                }
-            }
-        }
-
-        $resultArray = [];
-        foreach ($sortedIndexes as $key => $keyLinkedArray) {
-            $resultArray[] = $arrayLinks[$keyLinkedArray];
-        }
-
-        return $resultArray;
-    }
 
     /**
      * Получение значения символа по таблице, т.к в 7.1 подджержки ord 2 байта, нет
@@ -88,5 +90,6 @@ class MySort {
         }
         return ord($string);
     }
+
 }
 

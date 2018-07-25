@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d078b4e-5878-40af-8048-5f3219fa2cdc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TypeSort.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/autoload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MySort.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MySort.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/MySortTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MySortTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +38,26 @@
       <file leaf-file-name="MySort.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MySort.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="70" column="21" lean-forward="true" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+            <state relative-caret-position="90">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TypeSort.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TypeSort.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-366">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -44,11 +65,20 @@
       <file leaf-file-name="MySortTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/MySortTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="125">
+              <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
               <folding>
-                <element signature="e#88#119#0#PHP" expanded="true" />
+                <element signature="e#7#38#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvalidArgumentHelper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/InvalidArgumentHelper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -65,17 +95,8 @@
       <file leaf-file-name="autoload.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/autoload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/tests/bootstrap.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+            <state relative-caret-position="120">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -89,20 +110,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autoload_real.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_real.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-271">
-              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>uni</find>
+      <find>$maxLen</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,15 +125,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/MyClassTest.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/tests/bootstrap.php" />
         <option value="$PROJECT_DIR$/src/MyClass.php" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
         <option value="$PROJECT_DIR$/tests/MyClassTest.php" />
         <option value="$PROJECT_DIR$/src/MySort" />
+        <option value="$PROJECT_DIR$/src/Type.php" />
         <option value="$PROJECT_DIR$/app/autoload.php" />
-        <option value="$PROJECT_DIR$/tests/MySortTest.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/TypeSort.php" />
         <option value="$PROJECT_DIR$/src/MySort.php" />
+        <option value="$PROJECT_DIR$/tests/MySortTest.php" />
       </list>
     </option>
   </component>
@@ -168,11 +183,10 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="202" />
-    <option name="y" value="41" />
-    <option name="width" value="1078" />
-    <option name="height" value="711" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="729" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -202,6 +216,17 @@
               <item name="TestWebInvest" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestWebInvest" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestWebInvest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestWebInvest" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestWebInvest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestWebInvest" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="theseer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -244,14 +269,14 @@
     </option>
   </component>
   <component name="RunManager" selected="PHPUnit.MySortTest">
-    <configuration name="ConfigurationGeneratorTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="PHPUnit\Util\ConfigurationGeneratorTest" file="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/ConfigurationGeneratorTest.php" scope="Class" />
-    </configuration>
     <configuration name="MyClassTest (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="PHPUnit\Util\MyClassTest" file="$PROJECT_DIR$/tests/MyClassTest.php" scope="Class" />
     </configuration>
     <configuration name="MyClassTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="MyClassTest" file="$PROJECT_DIR$/tests/MyClassTest.php" scope="Class" />
+    </configuration>
+    <configuration name="MySortTest (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="WebInvest\MySortTest" file="$PROJECT_DIR$/tests/MySortTest.php" scope="Class" />
     </configuration>
     <configuration name="MySortTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="MySortTest" file="$PROJECT_DIR$/tests/MySortTest.php" scope="Class" />
@@ -264,19 +289,19 @@
     </configuration>
     <list>
       <item itemvalue="PHPUnit.Unnamed" />
-      <item itemvalue="PHPUnit.ConfigurationGeneratorTest" />
       <item itemvalue="PHPUnit.MyClassTest" />
       <item itemvalue="PHPUnit.MyClassTest (1)" />
       <item itemvalue="PHPUnit.MySortTest.testSortingByLenghtOfWords" />
       <item itemvalue="PHPUnit.MySortTest" />
+      <item itemvalue="PHPUnit.MySortTest (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="PHPUnit.MySortTest" />
+        <item itemvalue="PHPUnit.MySortTest (1)" />
         <item itemvalue="PHPUnit.MySortTest.testSortingByLenghtOfWords" />
         <item itemvalue="PHPUnit.MyClassTest" />
         <item itemvalue="PHPUnit.MyClassTest (1)" />
-        <item itemvalue="PHPUnit.ConfigurationGeneratorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -293,57 +318,57 @@
       <workItem from="1532290502064" duration="1633000" />
       <workItem from="1532292688132" duration="81000" />
       <workItem from="1532292793651" duration="38000" />
-      <workItem from="1532292836023" duration="32908000" />
+      <workItem from="1532292836023" duration="57465000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MySortTest - 2018.07.23 at 19h 49m 37s.xml">
+    <history-entry file="MySortTest - 2018.07.25 at 19h 21m 16s.xml">
       <configuration name="MySortTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MySortTest - 2018.07.23 at 19h 49m 55s.xml">
+    <history-entry file="MySortTest - 2018.07.25 at 19h 23m 20s.xml">
       <configuration name="MySortTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MySortTest - 2018.07.23 at 20h 59m 52s.xml">
+    <history-entry file="MySortTest - 2018.07.25 at 19h 24m 09s.xml">
       <configuration name="MySortTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MySortTest - 2018.07.23 at 21h 00m 35s.xml">
+    <history-entry file="MySortTest - 2018.07.25 at 19h 25m 08s.xml">
       <configuration name="MySortTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MySortTest - 2018.07.23 at 21h 01m 28s.xml">
+    <history-entry file="MySortTest - 2018.07.25 at 19h 27m 55s.xml">
       <configuration name="MySortTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MySortTest - 2018.07.23 at 21h 07m 28s.xml">
+    <history-entry file="MySortTest - 2018.07.25 at 19h 36m 42s.xml">
       <configuration name="MySortTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MySortTest - 2018.07.23 at 21h 08m 14s.xml">
+    <history-entry file="MySortTest - 2018.07.25 at 19h 37m 16s.xml">
       <configuration name="MySortTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MySortTest - 2018.07.23 at 21h 09m 42s.xml">
+    <history-entry file="MySortTest - 2018.07.25 at 19h 37m 40s.xml">
       <configuration name="MySortTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MySortTest - 2018.07.23 at 21h 09m 59s.xml">
+    <history-entry file="MySortTest - 2018.07.25 at 19h 38m 38s.xml">
       <configuration name="MySortTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MySortTest - 2018.07.23 at 21h 12m 41s.xml">
+    <history-entry file="MySortTest - 2018.07.25 at 19h 39m 44s.xml">
       <configuration name="MySortTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34660000" />
+    <option name="totallyTimeSpent" value="59217000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="729" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="729" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50080776" side_tool="true" weight="0.32911393" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.3322785" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.40822786" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32911393" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32911393" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.32956383" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26171243" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26171243" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32956383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -424,13 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/code-coverage-phpt.phpt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -489,13 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/tests/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_psr4.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -513,13 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-271">
           <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -541,13 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="736" column="9" selection-start-line="736" selection-start-column="9" selection-end-line="736" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpunit.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -585,27 +582,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/tests/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/subjective-php/spl-types/src/AbstractEnum.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/subjective-php/spl-types/phpunit.xml.dist">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        <state relative-caret-position="120">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpunit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/SplType/SplType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/json/json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="770" column="9" selection-start-line="770" selection-start-column="9" selection-end-line="770" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/InvalidArgumentHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/MySortTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="125">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
           <folding>
-            <element signature="e#88#119#0#PHP" expanded="true" />
+            <element signature="e#7#38#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TypeSort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-366">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MySort.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="70" column="21" lean-forward="true" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+        <state relative-caret-position="90">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
