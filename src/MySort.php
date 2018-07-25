@@ -2,8 +2,6 @@
 
 namespace WebInvest;
 
-use function PHPSTORM_META\elementType;
-
 class MySort {
 
     private $res;
