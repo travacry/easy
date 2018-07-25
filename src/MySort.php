@@ -43,7 +43,7 @@ class MySort {
 
         $arrayLinks = array();
         $len = $this->mb_ord("ы") - $this->mb_ord("а");
-        $maxLen = ($typeSort == TypeSort::Desc) ? max(array_map('mb_strlen', $array)) : 0;
+
 
         // вначале, банально по длине
         foreach ($array as &$val) {
@@ -53,15 +53,16 @@ class MySort {
                 $curIndex = $key - $i; // $key - $i; $i - 1, т.к от 0;
                 $char = mb_substr($val, $curIndex, 1);
                 // сдвиг по символам
-                $index += (($typeSort == TypeSort::Desc) ?
-                        ($this->mb_ord("а") - $this->mb_ord($char) + $len)
-                        : ($this->mb_ord($char)) + $len) * ($curIndex + 1);
+                $index += ($this->mb_ord($char) + $len) * ($curIndex + 1);
             }
-            $index += (($typeSort == TypeSort::Desc) ? $maxLen - mb_strlen($val) : $key) * 1000000;
+            $index += $key * 1000000;
             // создание индекса для группировки по первому условию + последний симовол
             $arrayLinks[$index] = $val;
         }
-        ksort($arrayLinks);
+
+        if ($typeSort == TypeSort::Asc) ksort($arrayLinks);
+        else krsort($arrayLinks);
+
         return $arrayLinks;
     }
 
